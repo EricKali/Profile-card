@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
-
 :root {
     /* Primary Colors */
     --Dark-cyan: hsl(185, 75%, 39%);
@@ -26,9 +25,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(images/bg-pattern-top.svg) no-repeat ,url(images/bg-pattern-bottom.svg) var(--Dark-cyan);
-    
-    
+    background-color: var(--Dark-cyan);
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-size: 70%, 70%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 180% left -60%, right -50% bottom 210%;
 }
 
 .card {
@@ -42,11 +43,9 @@ body {
     background: white;
     border-radius: 4%;
     box-shadow: 0 0px 2px 0px var(--desaturatedblue);
-
 }
 
 .top-card {
-
     width: inherit;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
@@ -84,7 +83,6 @@ body {
     color: var(--Dark-gray);
     font-style: normal;
     text-align: center;
-
 }
 
 .separator {
@@ -99,7 +97,6 @@ body {
     align-items: center;
     margin-top: -10px;
     margin-bottom: 20px;
-
 }
 
 .fol-lik-pic {
